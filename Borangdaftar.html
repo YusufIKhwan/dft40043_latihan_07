@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Pendaftaran Pemain Bola Sepak</h2>
+    <p>Sila Isi Ruang yang ditempatkan</p>
+    <form action="simpan.php" method="post">
+        <table>
+        <tr>
+            <td>Nama Penuh</td>
+            <td>
+                <input type="text" name="Namapenuh" id="Namapenuh" size="40" required placeholder="Nama Penuh Ic">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Nombor Ic</td>
+            <td><input type="Nomboric" name="Nomboric" id="Nomboric" size="20">
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>Alamat</td>
+            <td> <input type="text" name="Alamat" id="Alamat"></td size="60" required placeholder="alamat rumah terkini">
+        </tr>
+
+        <tr>
+            <td>Nombor Telefon</td>
+            <td><input type="text" name="Nombortelefon" id="Nombortelefon"></td maxlength="10">
+        </tr>
+         <tr>
+             <td>Pilih Kedudukan</td>
+             <td>
+                 <input type="text" name="Kedudukan" id="Kedudukan" list="senarai kedudukan">
+                 <datalist id="senarai kedudukan">
+                    <option value="Penyerang">
+                    <option value="Pertahanan">
+                    <option value="Penjaga Gol">
+                    <option value="Penyerang Sayap Kanan/kiri">
+                    <option value="Pertengahan">
+                        
+                 </datalist> 
+             </td>
+         </tr>
+
+            
+
+        </table>
+        <button type="submit">Simpan</button>
+        <button type="reset">Buang</button>
+    </form>
+</body>
+</html>
